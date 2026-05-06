@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Lens - IA na Reciclagem e Sustentabilidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #059669, #10b981);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #10b981;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #10b981; }
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: 100%;
+            width: 2px;
+            background: #6ee7b7;
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-leaf text-emerald-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-emerald-600">Green Lens</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-emerald-600 px-3 py-2 text-sm font-medium">Início</a>
+                    <a href="#app" class="text-gray-700 hover:text-emerald-600 px-3 py-2 text-sm font-medium">Green Lens</a>
+                    <a href="#science" class="text-gray-700 hover:text-emerald-600 px-3 py-2 text-sm font-medium">IA & Reciclagem</a>
+                    <a href="#impact" class="text-gray-700 hover:text-emerald-600 px-3 py-2 text-sm font-medium">Impacto</a>
+                    <a href="#future" class="text-gray-700 hover:text-emerald-600 px-3 py-2 text-sm font-medium">Futuro</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-emerald-600 hover:bg-gray-100 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-emerald-600">Início</a>
+                <a href="#app" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600">Green Lens</a>
+                <a href="#science" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600">IA & Reciclagem</a>
+                <a href="#impact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600">Impacto</a>
+                <a href="#future" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600">Futuro</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Revolução da <span class="typewriter">Reciclagem com IA</span></h1>
+                    <p class="text-xl mb-8">Descubra como a inteligência artificial está transformando a reciclagem, reduzindo resíduos e construindo um futuro mais sustentável com o Green Lens.</p>
+                    <div class="flex space-x-4">
+                        <a href="#app" class="bg-white text-emerald-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">Conhecer App</a>
+                        <a href="#future" class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-emerald-600 transition duration-300">Ver Futuro</a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
+                    <img src="https://illustrations.popsy.co/amber/artificial-intelligence.svg" alt="IA Reciclagem" class="w-full max-w-md animate-float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-emerald-600 text-4xl mb-3">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">+45%</h3>
+                    <p class="text-gray-600">Aumento na taxa de reciclagem com auxílio de IA</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-emerald-600 text-4xl mb-3">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">30M ton</h3>
+                    <p class="text-gray-600">Resíduos corretamente descartados por ano</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-emerald-600 text-4xl mb-3">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">98%</h3>
+                    <p class="text-gray-600">Precisão na identificação de materiais recicláveis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Green Lens App Section -->
+    <section id="app" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Green Lens: <span class="text-emerald-600">Sustentabilidade na Palma da Mão</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Tire uma foto, e a IA te diz onde e como descartar corretamente</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="order-2 md:order-1">
+                    <div class="bg-emerald-50 p-2 rounded-2xl inline-block mb-4">
+                        <i class="fas fa-camera text-emerald-600 text-2xl p-2"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Como funciona o Green Lens?</h3>
+                    <p class="text-gray-600 mb-6">O Green Lens é um aplicativo inovador que utiliza inteligência artificial para identificar qualquer resíduo reciclável através da câmera do seu celular. Em segundos, você sabe exatamente como descartar corretamente.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-camera-retro text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">1. Capture</h4>
+                                <p class="text-gray-600 text-sm">Tire uma foto do resíduo que deseja descartar</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-brain text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">2. Análise com IA</h4>
+                                <p class="text-gray-600 text-sm">Nossa IA identifica o material, tipo e categoria do resíduo</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-map-marker-alt text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">3. Recomendação</h4>
+                                <p class="text-gray-600 text-sm">Receba o local de descarte correto mais próximo e dicas de reciclagem</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex space-x-4">
+                        <button class="bg-emerald-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-emerald-700 transition">
+                            <i class="fab fa-google-play mr-2"></i>Google Play
+                        </button>
+                        <button class="bg-emerald-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-emerald-700 transition">
+                            <i class="fab fa-apple mr-2"></i>App Store
+                        </button>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <img src="https://illustrations.popsy.co/amber/mobile-application.svg" alt="Green Lens App" class="w-full max-w-sm">
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center text-emerald-800">O que o Green Lens reconhece?</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-4 rounded-xl text-center shadow-sm">
+                        <i class="fas fa-wine-bottle text-emerald-600 text-3xl mb-2"></i>
+                        <p class="font-medium">Vidro</p>
+                        <p class="text-xs text-gray-500">Garrafas, potes, frascos</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center shadow-sm">
+                        <i class="fas fa-box-open text-emerald-600 text-3xl mb-2"></i>
+                        <p class="font-medium">Papel/Papelão</p>
+                        <p class="text-xs text-gray-500">Caixas, jornais, envelopes</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center shadow-sm">
+                        <i class="fas fa-tint text-emerald-600 text-3xl mb-2"></i>
+                        <p class="font-medium">Plástico</p>
+                        <p class="text-xs text-gray-500">PET, PEAD, embalagens</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center shadow-sm">
+                        <i class="fas fa-carrot text-emerald-600 text-3xl mb-2"></i>
+                        <p class="font-medium">Orgânico</p>
+                        <p class="text-xs text-gray-500">Restos de comida, cascas</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center shadow-sm">
+                        <i class="fas fa-battery-full text-emerald-600 text-3xl mb-2"></i>
+                        <p class="font-medium">Eletrônicos</p>
+                        <p class="text-xs text-gray-500">Baterias, celulares, cabos</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center shadow-sm">
+                        <i class="fas fa-oil-can text-emerald-600 text-3xl mb-2"></i>
+                        <p class="font-medium">Óleo</p>
+                        <p class="text-xs text-gray-500">Óleo de cozinha usado</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center shadow-sm">
+                        <i class="fas fa-syringe text-emerald-600 text-3xl mb-2"></i>
+                        <p class="font-medium">Resíduos Perigosos</p>
+                        <p class="text-xs text-gray-500">Medicamentos, pilhas</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center shadow-sm">
+                        <i class="fas fa-tshirt text-emerald-600 text-3xl mb-2"></i>
+                        <p class="font-medium">Têxteis</p>
+                        <p class="text-xs text-gray-500">Roupas, tecidos, calçados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IA & Reciclagem Section -->
+    <section id="science" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">IA na <span class="text-emerald-600">Reciclagem</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Tecnologia inteligente para um planeta mais limpo</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Como a IA está revolucionando a gestão de resíduos</h3>
+                    <p class="text-gray-600 mb-6">Algoritmos de visão computacional e aprendizado profundo conseguem identificar e classificar resíduos em milissegundos, com precisão superior a humana em muitos casos.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-2"></i>
+                            <span>Separação automatizada em usinas de reciclagem com robôs inteligentes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-2"></i>
+                            <span>Reconhecimento de materiais complexos (multicamadas, plásticos mistos)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-2"></i>
+                            <span>Previsão de geração de resíduos para otimização de coleta</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-2"></i>
+                            <span>Análise de imagens via satélite para identificar lixões ilegais</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-xl">
+                    <img src="https://illustrations.popsy.co/amber/research.svg" alt="IA Reciclagem" class="w-full rounded-lg">
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mt-12">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-emerald-600 text-white p-8">
+                        <h3 class="text-2xl font-bold mb-4">Evolução da IA na Reciclagem</h3>
+                        <p class="mb-6">A trajetória da tecnologia aplicada à sustentabilidade</p>
+                        <div class="relative">
+                            <div class="timeline-item relative pl-8 pb-8">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-white border-4 border-emerald-300"></div>
+                                <h4 class="font-bold">2015</h4>
+                                <p>Primeiros sensores ópticos em esteiras de reciclagem</p>
+                            </div>
+                            <div class="timeline-item relative pl-8 pb-8">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-white border-4 border-emerald-300"></div>
+                                <h4 class="font-bold">2018</h4>
+                                <p>Redes neurais alcançam 90% de acurácia na classificação</p>
+                            </div>
+                            <div class="timeline-item relative pl-8 pb-8">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-white border-4 border-emerald-300"></div>
+                                <h4 class="font-bold">2021</h4>
+                                <p>Robôs autônomos substituem catadores em centros urbanos</p>
+                            </div>
+                            <div class="timeline-item relative pl-8">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-white border-4 border-emerald-300"></div>
+                                <h4 class="font-bold">2024</h4>
+                                <p>Apps como Green Lens democratizam o acesso à informação</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold mb-4">Benefícios da IA na Gestão de Resíduos</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-emerald-100 p-2 rounded-lg mr-4">
+                                    <i class="fas fa-chart-line text-emerald-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Eficiência Operacional</h4>
+                                    <p class="text-gray-600">Aumento de até 70% na velocidade de triagem</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-emerald-100 p-2 rounded-lg mr-4">
+                                    <i class="fas fa-globe-americas text-emerald-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Redução do Impacto Ambiental</h4>
+                                    <p class="text-gray-600">Menos resíduos em aterros e lixões</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-emerald-100 p-2 rounded-lg mr-4">
+                                    <i class="fas fa-chart-pie text-emerald-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Economia Circular</h4>
+                                    <p class="text-gray-600">Maximização do reaproveitamento de materiais</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Impacto <span class="text-emerald-600">Ambiental</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Resultados reais que o Green Lens e a IA já estão gerando</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-emerald-50 p-6 rounded-xl text-center card-hover transition duration-300">
+                    <div class="text-emerald-600 text-5xl mb-4">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-emerald-700 mb-2">1.2M</div>
+                    <p class="text-gray-700 font-medium">Árvores salvas por ano</p>
+                    <p class="text-sm text-gray-500 mt-2">Com a redução do consumo de celulose</p>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-xl text-center card-hover transition duration-300">
+                    <div class="text-emerald-600 text-5xl mb-4">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-emerald-700 mb-2">8B L</div>
+                    <p class="text-gray-700 font-medium">Água preservada</p>
+                    <p class="text-sm text-gray-500 mt-2">Economia na produção de novos materiais</p>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-xl text-center card-hover transition duration-300">
+                    <div class="text-emerald-600 text-5xl mb-4">
+                        <i class="fas fa-smog"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-emerald-700 mb-2">3.5M t</div>
+                    <p class="text-gray-700 font-medium">CO₂ evitado</p>
+                    <p class="text-sm text-gray-500 mt-2">Equivalente a tirar 750 mil carros das ruas</p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-8 text-white">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Green Lens em Números</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <div class="text-3xl font-bold">500k+</div>
+                                <div class="text-sm opacity-90">Downloads</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">2M+</div>
+                                <div class="text-sm opacity-90">Fotos analisadas</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">4.8★</div>
+                                <div class="text-sm opacity-90">Avaliação média</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">150+</div>
+                                <div class="text-sm opacity-90">Cidades atendidas</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-recycle text-7xl mb-2 opacity-80"></i>
+                        <p class="font-medium">"Reciclar nunca foi tão fácil"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section id="future" class="py-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">O <span class="text-white">Futuro</span> da Reciclagem com IA</h2>
+                <p class="text-xl max-w-3xl mx-auto">Próximos passos para um mundo sem resíduos</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Para onde estamos indo?</h3>
+                    <p class="mb-6">Com o avanço da IA, o Green Lens e tecnologias similares estão evoluindo para criar um ecossistema completo de gestão de resíduos.</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold mb-2">Oportunidades</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-white mt-1 mr-2"></i>
+                                <span>Recompensas para usuários que reciclam corretamente</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-white mt-1 mr-2"></i>
+                                <span>Integração com coleta inteligente e sensores IoT</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-white mt-1 mr-2"></i>
+                                <span>Marketplace de materiais recicláveis entre empresas</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2">Desafios a superar</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-yellow-300 mt-1 mr-2"></i>
+                                <span>Infraestrutura de reciclagem em regiões menos desenvolvidas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-yellow-300 mt-1 mr-2"></i>
+                                <span>Educação ambiental em larga escala</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-yellow-300 mt-1 mr-2"></i>
+                                <span>Padronização de símbolos e cores para reciclagem</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-filter backdrop-blur-sm">
+                    <h3 class="text-2xl font-bold mb-4 text-center">Próximas Features do Green Lens</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-white bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Dashboard de Impacto Pessoal</h4>
+                                <p>Veja o quanto você já ajudou o planeta</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-white bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Gamificação</h4>
+                                <p>Desafios e conquistas para incentivar a reciclagem</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-white bg-opacity-20 p-2 rounded-lg mr-4">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Parceiros Locais</h4>
+                                <p>Buscar proximidade com estabelecimentos parceiros a reciclar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-6">Junte-se à Revolução Verde</h3>
+                <p class="mb-8 max-w-2xl mx-auto">Baixe o Green Lens e faça parte da mudança. Cada resíduo descartado corretamente é um passo rumo a um planeta mais sustentável.</p>
+                <button id="newsletter-btn" class="bg-white text-emerald-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition duration-300 shadow-lg">Receba Novidades</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Modal -->
+    <div id="newsletter-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl max-w-md w-full p-8 mx-4">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-emerald-600">Inscreva-se</h3>
+                <button id="close-modal" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <p class="mb-6 text-gray-600">Receba dicas de reciclagem e novidades do Green Lens diretamente no seu e-mail.</p>
+            <form id="newsletter-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" id="terms" class="h-4 w-4 text-emerald-600 focus:ring-emerald-500 border-gray-300 rounded">
+                    <label for="terms" class="ml-2 block text-sm text-gray-700">Quero receber conteúdos sobre sustentabilidade</label>
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 text-white py-2 px-4 rounded-lg hover:bg-emerald-700 transition duration-300">Inscrever-se</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-leaf mr-2"></i> Green Lens
+                    </h3>
+                    <p class="text-gray-400">Tecnologia a favor do meio ambiente. Recicle de forma inteligente.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Navegação</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Início</a></li>
+                        <li><a href="#app" class="text-gray-400 hover:text-white transition">Green Lens</a></li>
+                        <li><a href="#science" class="text-gray-400 hover:text-white transition">IA & Reciclagem</a></li>
+                        <li><a href="#impact" class="text-gray-400 hover:text-white transition">Impacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Recursos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Central de Ajuda</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Para Empresas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Seja um Ponto de Coleta</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Redes</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p class="text-gray-400">contato@greenlens.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Green Lens - Inteligência Artificial para um Mundo Mais Limpo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Newsletter modal
+        const newsletterBtn = document.getElementById('newsletter-btn');
+        const newsletterModal = document.getElementById('newsletter-modal');
+        const closeModal = document.getElementById('close-modal');
+        const newsletterForm = document.getElementById('newsletter-form');
+
+        newsletterBtn.addEventListener('click', () => {
+            newsletterModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeModal.addEventListener('click', () => {
+            newsletterModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            alert(`Obrigado, ${name}! Você receberá novidades do Green Lens em breve. 🌱`);
+            newsletterForm.reset();
+            newsletterModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        newsletterModal.addEventListener('click', (e) => {
+            if (e.target === newsletterModal) {
+                newsletterModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
